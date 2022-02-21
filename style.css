@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body {
+    background-color: rgb(219, 91, 91);
+    box-sizing: border-box;
+    transition: 1s;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 500px;
+    height: 450px;
+    background-color: rgba(210, 216, 197, 0.4);
+    margin: 100px auto 0;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.clock button {
+    font-size: 20px;
+    margin: 110px 8px 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#timer {
+    color: white;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.countdown button {
+    font-size: 22px;
+    margin: 10px 8px;
+    border: grey;
+    border-radius: 15px;
+    padding: 4px 9px;
+    width: 100px;
+    color: rgb(126, 114, 114);
+    cursor: pointer;
+    transition: 0.2s;
+} 
+
+.countdown button:active {
+    background-color: #73683B;
+    color: #fff;
+}
+
+@media screen and (max-width:480px) {
+
+    main {
+         width: 78%;
+    }
+
+    .countdown button {
+         background: white;
+    }
+}
